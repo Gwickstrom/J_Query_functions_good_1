@@ -1,0 +1,567 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+#wrapper{
+    max-width: 970px;
+    max-height: 970px;
+    width: 970px;
+    height: auto;
+    background: transparent;
+}
+.boxes{
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    background: transparent;
+}
+.selectors{
+    background: white;
+    font-size: 28px;
+    font-family: Comic sans ms;
+    font-weight: bold;
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    left: 330px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.text_desc{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    font-size: 17px;
+    width: 60%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding-bottom: 5px;
+
+}
+#data_text{
+    height: 60px;
+    font-size: 16px;
+    width: 80%;
+    text-align: left;
+
+}
+#button1{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#button2{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button3{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button4{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+
+}
+#button5{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button6{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display:inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#button7{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button8{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button9{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+#button10{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button11{
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button12{
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 35px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button13{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+#button14{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button15{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#button16{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+#button17{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#data_text2{
+    display: none;
+    border:1px solid green;
+}
+.important{
+    font-size: 24px;
+    font-style: italic;
+}
+.red{
+    color:red;
+    background:darkred;
+}
+#google{
+    text-decoration-line: underline;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color:black;
+    background-color:white;;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.fadeIn{
+    height: 30px;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+.fadeOut{
+    height: 30px;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+h4{
+    height: 30px;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color:grey;
+    border: 2px solid black;
+    width: 30%;
+    display: inline-block;
+    bottom: 50px;
+    left: 15px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+h6{
+    height: 50px;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color:grey;
+    border: 2px solid black;
+    width: 30%;
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+.hide{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 10%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+.show{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 10%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+    }
+.toggle{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+.slidetoggle{
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 1px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+h5{
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border: 2px solid black;
+    width: 10%;
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+    padding: 0px;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px black;
+}
+.panel{
+    height: 22px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    border: 2px solid black;
+    width: 25%;
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px black;
+    background-color: lightgrey;
+}
+.panel2{
+    height: 50px;
+    background: lightgrey;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 25%;
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px black;
+    background-color: lightgrey;
+    border: solid 1px #c3c3c3;
+}
+.flip{
+    text-align: center;
+    height:60px;
+    margin: 0 auto;
+    background-color:lightgrey;
+    border: 2px solid black;
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    padding: 0px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 5px black;
+}
+.flip2{
+    text-align: center;
+    height:50px;
+    margin: 0 auto;
+    background-color:lightgrey;
+    border: 2px solid black;
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    padding: 0px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.slideDown{
+    position: absolute;
+    height: auto;
+    bottom: 90px;
+    left: 130px;
+    width:45%;
+}
+.slideUp{
+    height: auto;
+    position: absolute;
+    bottom: 90px;
+    width:45%;
+}
+.panel {
+    padding: 20px;
+    display: none;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JQuery Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jQuery_Functions_Assignment.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#button1").hover(function(){
+                alert("You entered p1!");
+            },
+            function(){
+                alert("Bye! You now leave p1!");
+            });
+            $("#button2").click(function(){
+                $(this).toggle();
+            });
+
+            $(".hide").click(function(){
+                $(".hide").hide("slow");
+            });
+            $(".show").click(function(){
+                $(".show, .hide").show("slow");
+            });
+
+            $(".toggle").click(function(){
+                $("h5").toggle("slow");
+            });
+            $("#button14").click(function(){
+                $("p").append(" <b>Appended text</b>.");
+            });
+            $("#button16").click(function(){
+                $("ol").append("<li>Appended item</li>");
+            });
+            $("#button17").click(function(){
+                alert("The paragraph has been destroyed.");
+            });
+            $("#button15").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "lightgray");
+            },
+                mouseleave: function(){
+                    $(this).css("background-color", "lightblue");
+            },
+                click: function(){
+                    $(this).css("background-color", "yellow");
+            }
+            });
+            $(".fadeIn").click(function(){
+                $("h6").fadeIn();
+                $("h6").fadeIn("slow");
+                $("h6").fadeIn(4000);
+            });
+            $(".fadeOut").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(500);
+            });
+            $(".flip").click(function(){
+                $(".panel").slideDown("slow");
+            });
+            $(".flip2").click(function(){
+                $(".panel2").slideUp("slow");
+            });
+            $(".slidetoggle").click(function(){
+                $(".panel,.panel2").slideToggle("slow");
+            });
+
+            $("#button3").click(function(){
+                $("#test").text("Hello World!");
+            });
+            $("#button4").click(function(){
+                alert($("#html").html());
+            });
+            $("#button5").click(function(){
+               alert($("input:text").val());
+            });
+            $("#button6").click(function(){
+                alert($("#google").attr("href"));
+            });
+            $("#button7").click(function(){
+                $("h1, h2, p:last").addClass("red");
+                $("div").addClass("important");
+            });
+            $("#button8").click(function(){
+                $("p").before("<p>!Hello!</p>");
+            });
+            $("#button9").click(function(){
+                $("p").after("<p>!Hello!</p>");
+            });
+            $("input").focus(function(){
+                $("span").css("display", "inline").fadeOut(2000);
+            });
+            $("input").focus(function(){
+                $(this).css("background-color", "#cccccc");
+            });
+            $("#button11").click(function(){
+                $("div").data("greeting", "Hello There");
+            });
+            $("#button12").click(function(){
+                alert($("div").data("greeting"));
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+    <div class="boxes">
+        <div class="selectors"> Hover </div>
+        <div class="text_desc"> Hover over the button to recieve a message. </div>
+            <button id="button1"> Hover</button>
+
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Hide and Show</div>
+        <div class="text_desc"> Use the buttons to Hide the box and show it again.</div>
+            <button class="hide"> Hide</button>
+            <button class="show"> Show</button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Click </div>
+        <div class="text_desc"> This triggers click event, it attaches a function to run when a click occurs.</div>
+        <div id="button17"> Click</div>
+        <p> Click on this sentence. </p>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Append </div>
+        <div class="text_desc"> Insert content at the end of selected elements.</div>
+        <p> This is a paragraph. </p>
+        <ol>
+            <li>pen</li>
+            <li>paper</li>
+            <li>car</li>
+        </ol>
+        <button id="button14">Append text</button>
+        <button id="button16">Append list items</button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Mouseenter and Mouseleave</div>
+        <div class="text_desc"> Mouseover the button to experience Mouseenter and mouseleave.</div>
+        <div id="button15"> Mouseenter and Mouseleave</div>
+
+
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Toggle</div>
+        <div class="text_desc"> Toggle between hide and show methods. </div>
+        <button class="toggle">Toggle</button>
+        <h5> Hide toggled </h5>
+        <h5> Show toggled</h5>
+    </div>
+
+
+     <div class="boxes">
+        <div class="selectors"> Fade in </div>
+        <button class="fadeIn"> fadeIn </button>
+        <div class="text_desc"> Fade in the selected element.</div>
+        <h6> hi </h6>
+        <h6> Hello</h6>
+        <h6> Hey</h6>
+
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Fade out </div>
+        <div class="text_desc"> Fade out the selected element.</div>
+        <div id='div1' style="width:200px;height:20px;background-color:red;"> hi  </div>
+        <div id='div2' style="width:200px;height:20px;background-color:blue;"> Hello </div>
+        <div id='div3' style="width:200px;height:20px;background-color:green;"> Hey </div>
+        <button class="fadeOut"> fadeOut</button>
+    </div>
+
+    <div class="boxes">
+        <div class="selectors"> slide Down and slide Up </div>
+        <div class="text_desc">
+            Slide down (show) the selected element
+            Slide up (hide) the selected element.
+        </div>
+        <div class="slideDown">
+            <div class="flip">Click to slide down panel</div>
+            <div class="panel">Hello</div>
+        </div>
+        <div class="slideUp">
+            <div class="fliP2">Click to slide up</div>
+            <div class="panel2">Hello</div>
+        </div>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> slideToggle </div>
+        <div class="text_desc"> Toggle between Slide up and Slide down. </div>
+        <div class="flip"> Click to slide up and down</div>
+        <div class="panel">Hello</div>
+        <button class="slidetoggle"> Toggle up and down </button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> get text </div>
+        <div class="text_desc"> Set or return the text content of a selected element. </div>
+        <div id="test">This is some <b>bold</b> text in a paragraph.</div>
+        <button id="button3">Show Text</button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> get/set html </div>
+        <div class="text_desc"> Set or return the content of selected elements. </div>
+        <button id="button4">Show HTML</button>
+        <p id="html"> This is a <b>paragraph</b>.</p>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> get/set Value </div>
+        <div class="text_desc">Set or return the value attribute of the selected elements for form elements. </div>
+        <p>Name: <input type="text" value="Do it"></p>
+        <button id="button5"> Show value</button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> get Attributes </div>
+        <div class="text_desc"> Sets or returns attributes/values of selected element. Not only href.</div>
+        <p><a href="http://www.google.com" id="google">Google.com</a></p>
+        <button id="button6"> Show href value </button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> addClass </div>
+        <div class="text_desc"> Add a class name to a selected element. </div>
+        <h1>Heading 1</h1>
+        <p>This is a paragraph.</p>
+        <button id="button7"> Show value</button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Before </div>
+        <div class="text_desc"> Insert content before a selected element. </div>
+        <button id="button8"> Add Content Before</button>
+        <p>stuff happens.</p>
+        <p>stuff happens.</p>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> After </div>
+        <div class="text_desc"> Insert content after a selected element. </div>
+        <p>Words.</p>
+        <p>stuff happens</p>
+        <button id="button9"> Add Content After</button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Focus </div>
+        <div class="text_desc"> Attaches/triggers the focus event. </div>
+        Name: <input type="text" name="fullname"><br>
+        Email: <input type="text" name="email">
+
+        <button id="button10"> Focus</button>
+    </div>
+
+
+    <div class="boxes">
+        <div class="selectors"> Data </div>
+        <div class="text_desc"> Store arbitrary data associated with the matched
+            elements or return the value at the named data store for
+            the first element in the set elements. </div>
+        <div> Fun stuff greeting Hello There</div>
+
+        <button id="button11"> Attach data to div element button element</button>
+        <button id="button12"> Get data attached to div element</button>
+    </div>
+</body>
+</html>
